@@ -10,7 +10,7 @@ const form = document.querySelector("#form"),
 
 let myDate = new Date(sdate.value);
 let myTime = stime.value;
-// console.log(myTime);
+console.log(myTime);
 formatedDate =
   myDate.getDate() + "-" + (myDate.getMonth() + 1) + "-" + myDate.getFullYear();
 
@@ -110,8 +110,8 @@ function addTask(e) {
     storeTaskInLocalStorage(taskList.innerHTML);
 
     taskInput.value = "";
-    sdate.value = "";
-    stime.value = "";
+    // sdate.value = "";
+    // stime.value = "";
   }
 
   e.preventDefault();
